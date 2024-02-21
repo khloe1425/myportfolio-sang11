@@ -1,0 +1,47 @@
+/* ! Desktop first */
+/* Màn hình lớn trước màn hình nhỏ sau */
+/* điều kiện media query max-width: breakpoint (khoảng màn hình) */
+/** CSS mặc định cho tất cả màn hình */
+h1 {
+    color: red;
+}
+
+/* tablet */
+/* media query CSS3 , type: screen, print, speech, all(screen,print, speech) */
+@media screen and (max-width:992px) {
+
+    /* css riêng cho tablet, giới hạn code từ nhỏ hơn <= 992px */
+    h1 {
+        color: pink;
+    }
+}
+
+/* mobile */
+@media screen and (max-width:576px) {
+
+    /* css riêng cho mobile, giới hạn code từ nhỏ hơn <= 576px */
+    h1 {
+        color: purple;
+    }
+}
+
+
+/* ! Mobile first */
+/* Màn hình nhỏ trước màn hình lớn sau */
+h2{
+    color: green;
+}
+
+@media screen and (min-width:768px){
+    /* giới hạn code từ lớn hơn bằng  >= 768px */
+    h2 {
+            color: orange;
+        }
+}
+
+@media screen and (min-width:1200px) {
+    /* giới hạn code từ lớn hơn bằng  >= 1200px */
+    h2 {
+        color: blue;
+    }
+}
